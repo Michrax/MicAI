@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio - MicAI{% endblock %}
+
+{% block content %}
+  <h1 class="text-center mb-4">Mes projets</h1>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="p-4 border rounded bg-black">
+        <h4>MicAI Voice</h4>
+        <p>Assistant vocal intelligent avec reconnaissance vocale et génération de texte en temps réel (Python, Whisper, GPT).</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-4 border rounded bg-black">
+        <h4>Dashboard prédictif</h4>
+        <p>Plateforme web pour la prédiction de ventes avec visualisation dynamique et backend Flask/Pandas.</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

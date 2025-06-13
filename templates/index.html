@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Accueil | MicAI{% endblock %}
+
+{% block content %}
+<div class="text-center my-5">
+  <h1 class="display-4 text-danger fw-bold">Bienvenue chez MicAI</h1>
+  <p class="lead">Votre expert freelance en intelligence artificielle</p>
+  <a href="{{ url_for('services') }}" class="btn btn-danger btn-lg mt-3">Découvrir mes services</a>
+</div>
+
+<hr class="border-danger">
+
+<section class="row text-center mt-5">
+  <div class="col-md-4 mb-4">
+    <div class="p-4 border rounded border-danger h-100">
+      <h3 class="text-danger">Expertise</h3>
+      <p>Des compétences pointues en machine learning, deep learning et traitement de données.</p>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="p-4 border rounded border-danger h-100">
+      <h3 class="text-danger">Projets</h3>
+      <p>Des projets IA concrets réalisés pour des startups, PME et grandes entreprises.</p>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="p-4 border rounded border-danger h-100">
+      <h3 class="text-danger">Collaboration</h3>
+      <p>Une approche agile, centrée sur vos besoins et votre satisfaction.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

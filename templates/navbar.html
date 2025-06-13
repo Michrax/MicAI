@@ -1,0 +1,27 @@
+<header>
+  <!-- Bande haute avec logo + bannière + espace -->
+  <div class="d-flex justify-content-center align-items-center bg-dark py-3 px-4" style="gap: 2rem;">
+    <div class="logo" style="flex: 0 0 auto;">
+      <!-- Futur logo -->
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo MicAI" style="height: 60px;">
+    </div>
+    <div class="banner flex-grow-1 text-center">
+      <!-- Future bannière -->
+      <img src="{{ url_for('static', filename='images/banner.png') }}" alt="Bannière MicAI" style="max-height: 60px; max-width: 100%;">
+    </div>
+    <div class="right-space" style="flex: 0 0 100px;">
+      <!-- Espace pour bouton ou autre -->
+    </div>
+  </div>
+
+  <!-- Bandeau catégories -->
+  <nav class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-center gap-4 flex-wrap">
+      <!-- Exemple de catégories -->
+      <a href="{{ url_for('services') }}" class="text-white text-decoration-none fw-bold">Services</a>
+      <a href="{{ url_for('portfolio') }}" class="text-white text-decoration-none fw-bold">Portfolio</a>
+      <a href="{{ url_for('about') }}" class="text-white text-decoration-none fw-bold">À propos</a>
+      <a href="{{ url_for('contact') }}" class="text-white text-decoration-none fw-bold">Contact</a>
+    </div>
+  </nav>
+</header>
